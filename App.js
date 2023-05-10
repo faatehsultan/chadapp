@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { loadAsync } from "expo-font";
+import { Membership } from "./src/screens";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    const fetchFonts = async () =>
+        await loadAsync({
+            Maitree: require("./src/assets/fonts/Maitree-Regular.ttf"),
+            Maitree500: require("./src/assets/fonts/Maitree-Medium.ttf"),
+        });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    return <Membership />;
+}
