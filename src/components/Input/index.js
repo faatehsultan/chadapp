@@ -1,7 +1,7 @@
-import { View, Text, TextInput } from 'react-native';
-import React from 'react';
+import { View, Text, TextInput } from "react-native";
+import React from "react";
 
-import styles from './style';
+import styles from "./style";
 
 export default function Input({ label, value, placeholder, onChange }) {
   return (
