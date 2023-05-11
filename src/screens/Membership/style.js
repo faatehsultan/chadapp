@@ -27,13 +27,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#ffffff",
     opacity: 0.75,
-    fontFamily: "Maitree400",
+    fontFamily: "Maitree_400Regular",
   },
   userCardFreeUser: {
     fontSize: 13,
     color: "#FBAF00",
     opacity: 0.75,
-    fontFamily: "Maitree400",
+    fontFamily: "Maitree_400Regular",
   },
   avatarBasic: {
     backgroundColor: "background: rgba(214, 149, 0, 1)",
@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
   },
   sliderItemLabelActiveText: {
     color: "background: rgba(251, 175, 0, 1)",
+    fontFamily: "Maitree_400Regular",
     fontSize: 11,
   },
 });

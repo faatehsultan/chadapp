@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     textAlign: "left",
     fontSize: 18,
-    fontFamily: "Maitree400",
+    fontFamily: "Maitree_400Regular",
   },
   formGroup: {
     marginVertical: 10,
@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#171717",
     color: "rgba(255, 255, 255, 0.5)",
     padding: 15,
-    fontFamily: "Maitree400",
+    fontFamily: "Maitree_400Regular",
     borderRadius: 25,
     borderColor: "#FBAF00",
     borderWidth: 1,
-    fontSize: 14,
+    fontSize: 16,
   },
 });
 

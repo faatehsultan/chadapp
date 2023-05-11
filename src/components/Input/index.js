@@ -12,6 +12,7 @@ export default function Input({ label, value, placeholder, onChange }) {
         placeholder={placeholder}
         value={value}
         onChangeText={onChange}
+        placeholderTextColor={"#515151"}
       ></TextInput>
     </View>
   );

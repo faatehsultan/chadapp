@@ -1,22 +1,44 @@
-import { loadAsync } from "expo-font";
+import { useFonts } from "expo-font";
 import { Membership } from "./src/screens";
 import { useCallback, useEffect, useState } from "react";
+import {
+  Maitree_400Regular,
+  Maitree_500Medium,
+} from "@expo-google-fonts/maitree";
+import { StatusBar } from "expo-status-bar";
+import * as SplashScreen from "expo-splash-screen";
+import { ScrollView, StyleSheet, View } from "react-native";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const [fontsLoaded, setFontsLoaded] = useState(false);
-  // const fetchFonts = async () =>
-  //     await loadAsync({
-  //         Maitree400: require("./src/assets/fonts/Maitree-Regular.ttf"),
-  //         Maitree500: require("./src/assets/fonts/Maitree-Medium.ttf"),
-  //     });
-
-  useEffect(() => {
-    (async () => {
-      setFontsLoaded(false);
-      // await fetchFonts();
-      setFontsLoaded(true);
-    })();
+  const [fontsLoaded, error] = useFonts({
+    Maitree_400Regular,
+    Maitree_500Medium,
   });
 
-  return fontsLoaded ? <Membership /> : <></>;
+  const onLayoutRootView = useCallback(async () => {
+    if (true) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
+  return true ? (
+    <ScrollView onLayout={onLayoutRootView} style={styles.appContainer}>
+      <Membership />
+      <StatusBar style='inverted' />
+    </ScrollView>
+  ) : (
+    <></>
+  );
 }
+
+const styles = StyleSheet.create({
+  appContainer: {
+    backgroundColor: "#070707",
+  },
+});

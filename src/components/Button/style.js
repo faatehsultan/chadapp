@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     borderRadius: 25,
     marginVertical: 10,
-    fontFamily: "Maitree500",
     textAlign: "center",
   },
   btnPrimary: {
@@ -14,6 +13,7 @@ const styles = StyleSheet.create({
   btnText: {
     textAlign: "center",
     fontSize: 18,
+    fontFamily: "Maitree_500Medium",
   },
 });
 

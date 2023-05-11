@@ -8,8 +8,6 @@ import UserCard from "../../screens/Membership/components/UserCard";
 export default function AuthForm({ fields, heading, button, children }) {
   return (
     <View style={styles.body}>
-      <StatusBar style='auto' />
-
       <View style={styles.container}>
         <Text style={styles.sectionHeader}>{heading}</Text>
 

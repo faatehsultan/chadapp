@@ -4,10 +4,10 @@ const styles = StyleSheet.create({
   body: {
     width: "100%",
     flex: 1,
-    backgroundColor: "#070707",
-    alignItems: "center",
+    paddingTop: 140,
+    paddingBottom: 10,
     justifyContent: "center",
-    paddingTop: 80,
+    alignItems: "center",
   },
   container: {
     width: "80%",
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     marginBottom: 20,
     textAlign: "center",
-    fontFamily: "Maitree500",
+    fontFamily: "Maitree_500Medium",
   },
 });
 
